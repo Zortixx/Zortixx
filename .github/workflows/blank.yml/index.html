@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Sneaky Values</title>
+    <link rel="icon" href="/Assets/Images/snkeay_icon.png"" type="image/gif" sizes="16x16">
+</head>
+
+    <meta content="Embed Title" property="og:title" />
+    <meta content="Site Description" property="og:description" />
+    <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+    <meta content="https://embed.com/embedimage.png" property="og:image" />
+    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+<script>
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    });
+
+    function copy_server_link() {
+    var copy_text = document.getElementById("copy_discord_link")
+    var input = document.createElement("input");
+    input.value = 'https://discord.gg/trading';
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand("copy");
+    document.body.removeChild(input)
+    copy_text.innerHTML = "Copied to clipboard!"
+    }
+
+    function mouse_out_copy() {
+    var copy_text = document.getElementById("copy_discord_link")
+    copy_text.innerHTML = "Click to copy!"
+    }
+
+    window.onscroll = function() {scrollbarFunction()};
+
+    function scrollbarFunction() {
+        if (document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+               var topnav = document.getElementById('topnav')
+               topnav.style.backgroundColor = 'rgb(10, 24, 5)'
+            } else {
+               var topnav = document.getElementById('topnav')
+               topnav.style.backgroundColor = 'rgba(17, 65, 0, 0.384)'
+        }
+    }
+</script>
+
+<div class="topnav" id="topnav">
+    <img src="/Assets/Images/snkeay_icon.png" onContextMenu="return false;">
+
+    <a class="sneaky_values_text">Sneaky Values</a>
+
+    <a style="float: right;" class="home_btn" herf="#home" onclick="location.href='/index.html'">
+    <img src="/Assets/Images/home_icon.png" style="width: 26px; height: 26px; top: 0px;" class="home_icon">
+    </a>
+
+    <a style="float: right;" class="discord_btn" onclick="window.open('https://discord.gg/trading', '_blanck')">
+    <img src="/Assets/Images/discord_icon.png" style="width: 26px; height: 26px; top: 1.2px;" class="discord_icon">
+    </a>
+
+</div>
+
+<body oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+
+<div class="background"></div>
+
+<link rel="stylesheet" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div class="newsbar" id="newsbar">
+    <marquee Scrollamount=15 loop="">
+    <span id="newspart">Sneaky Values is currently under development.</span>
+    </marquee>
+</div>
+
+<h1>SNEAKY VALUES</h1>
+
+<p>Unfortunately, This website is currently under development. We will do our best to make this site as soon as possible!</p>
+<p class="class_text_one">For now, join our discord server to let you know about website implementation. and for awesome cheap invite rewards. <br> And many giveaways too! :D</p>
+
+<div class="rules_text">
+    <h2><img class="warning_icon" src="/Assets/Images/warning_icon.png"> Rules:</h2>
+    <p>1 - Please follow the rules and regulations of Discord.</p>
+    <p style="color:rgb(163, 136, 136);">2 - Do not join if you are not at least 13 years old. </p>
+</div>
+
+<div class="server_banner">
+<div class="sneaky_discord_background"></div>
+<div class="discord_server_background">    
+    <img class="population_icon" src="/Assets/Images/population_icon.png">
+    <a class="population_text">15K Members</a>
+
+    <img class="rewards_icon" src="/Assets/Images/rewards_icon.png">
+    <a class="rewards_text">Cheap Invite Rewards</a>
+
+    <img class="sneaky_socity_icon" src="/Assets/Images/sneaky_socity_logo.gif">
+
+    <a class="discord_link_text" onclick="copy_server_link()" onmouseout="setTimeout(mouse_out_copy, 400)">Discord.gg/trading</a>
+    <a class="copy_discord_link" id="copy_discord_link">Click to copy!</a>
+
+    <button class="discord_join_button" onclick="location.href='https://discord.gg/trading'">Join Now!</button>
+
+    <img class="discord_logo" src="/Assets/Images/discord_logo.png">
+</div>
+<img class="sneaky_society_banner" alt="Banner" src="/Assets/Images/sneaky_society_banner.png">
+</div>
+
+<div class="copyright_container">
+    <div class="push">Copyright ©2021 - Sneaky Values</div>
+</div>
+<div class="footer"></div>
+
+
+</body>
+</html>
